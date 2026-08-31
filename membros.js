@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="col-12 col-sm-6 col-lg-3 team-member" data-category="${categoriasAtuais}">
                   <div class="team-card">
                     <div class="team-card-img-wrapper">
-                      <img src="${linkFoto}" alt="Foto de ${membro["Nome completo"]}" onerror="this.src='https://via.placeholder.com/300x250?text=Sem+Foto'">
+                      <img src="${linkFoto}" alt="Foto de ${membro["Nome completo"]}" onerror="this.src='https://as1.ftcdn.net/v2/jpg/18/97/90/48/1000_F_1897904899_DsZyh2sYlBJrgFCtUNLr8VZAcllUXk4t.jpg'">
                     </div>
                     <div class="team-card-body">
                       <h3 class="team-card-title">${membro["Nome completo"]}</h3>

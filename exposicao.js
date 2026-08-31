@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     
+
     // 1. Captura o parâmetro "id" da URL (ex: ?id=luiz-gama)
     const parametros = new URLSearchParams(window.location.search);
     const idPersonalidade = parametros.get("id");
@@ -32,6 +33,14 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector("main").innerHTML = "<h2 style='text-align:center; margin-top:50px;'>Exposição não encontrada.</h2>";
     }
 
-    
+   // Exemplo de como o JavaScript da página de exposição pode montar o link do Forms com o nome da personalidade:
+    const nomePersonalidade = dados.nome; // Ex: "Luiz Gama"
+    const idDaPerguntaNoForms = "110415446"; // O número que você descobriu no passo 2
+
+    // Cria o link dinamicamente
+    const linkFormsDinamico = `https://docs.google.com/forms/d/e/1FAIpQLSen1Nn49eSJVFsBpm1HkDdbMkBlGdt2wQA8-EriGywj7F7F5w/viewform?usp=pp_url&entry.${idDaPerguntaNoForms}=${encodeURIComponent(nomePersonalidade)}`;
+
+    // Joga o link no botão de feedback da página
+    document.getElementById("btn-feedback").href = linkFormsDinamico; 
 
 });

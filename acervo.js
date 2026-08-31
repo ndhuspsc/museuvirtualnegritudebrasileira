@@ -1,6 +1,7 @@
 // acervo.js
 const bancoDeDados = {
   "luiz-gama": {
+    destaque:true,
     nome: "Luiz Gama",
     indexTexto:"O advogado autodidata que desafiou o império e libertou centenas de escravizados.",
     fotoBanner: "Assets/LuizGama/fundo.png",
@@ -70,6 +71,7 @@ const bancoDeDados = {
   },
 
   "abdias-nascimento": {
+    destaque:false,
     nome: "Abdias Nascimento",
     indexTexto:"O teatro, a política e a arte como ferramentas de resistência e emancipação.",
     fotoBanner: "Assets/Abdias/os doadores da tecnologia.png",
