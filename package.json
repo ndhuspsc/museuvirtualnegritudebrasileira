@@ -1,0 +1,29 @@
+{
+  "name": "museu-virtual-negritude-brasileira",
+  "version": "1.0.0",
+  "description": "Museu Virtual da Negritude Brasileira - Um projeto do Núcleo de Direitos Humanos da USP São Carlos",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ndhuspsc/museuvirtualnegritudebrasileira.git"
+  },
+  "keywords": [
+    "museu",
+    "cultura",
+    "história",
+    "negritude",
+    "brasil"
+  ],
+  "author": "Núcleo de Direitos Humanos - USP São Carlos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ndhuspsc/museuvirtualnegritudebrasileira/issues"
+  },
+  "homepage": "https://github.com/ndhuspsc/museuvirtualnegritudebrasileira#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
