@@ -488,6 +488,28 @@
       .ref-list a { color: var(--teal); text-decoration: underline; }
       .ref-list a:hover { color: var(--teal-dark); }
 
+      .cookie-banner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--dark, #222);
+        color: #fff;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 9999;
+        box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
+        font-size: 0.9rem;
+        display: none; /* Começa escondido por padrão */
+      }
+
+      .cookie-banner p {
+        margin: 0;
+        padding-right: 15px;
+      }
+
       /* ── Footer ────────────────────────────────── */
       #site-footer {
         background: #7a3b1e;

@@ -16,6 +16,13 @@
     const footerPlaceholder = document.getElementById("footer-placeholder");
     if (footerPlaceholder) {
         footerPlaceholder.innerHTML = `
+          <!-- Banner de Cookies LGPD -->
+          <div id="cookie-banner" class="cookie-banner">
+            <p>
+              Utilizamos cookies de análise para melhorar sua experiência no Museu Virtual.<br> Ao continuar navegando, você concorda com a nossa política.
+            </p>
+            <button id="aceitar-cookies" class="btn btn-sm btn-light text-dark fw-bold">Entendido</button>
+          </div>
             <footer id="site-footer">
               <p style="color: #f5e6d8; font-size: 0.85rem; margin-bottom: 12px; opacity: 0.8;">
                   Uma iniciativa dos projetos de extensão
@@ -35,4 +42,18 @@
             </footer>
         `;
     }
+
+    const banner = document.getElementById("cookie-banner");
+    const botaoAceitar = document.getElementById("aceitar-cookies");
+
+    // Verifica se o usuário já aceitou os cookies anteriormente
+    if (!localStorage.getItem("cookie_aceito")) {
+        banner.style.display = "flex"; // Mostra o banner se for a primeira vez
+    }
+
+    // Quando o usuário clicar em "Entendido"
+    botaoAceitar.addEventListener("click", function() {
+        localStorage.setItem("cookie_aceito", "true"); // Salva a escolha
+        banner.style.display = "none"; // Esconde o banner suavemente
+    });
   });

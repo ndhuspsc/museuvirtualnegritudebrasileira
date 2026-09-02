@@ -41,6 +41,17 @@ document.addEventListener("DOMContentLoaded", function() {
     const linkFormsDinamico = `https://docs.google.com/forms/d/e/1FAIpQLSen1Nn49eSJVFsBpm1HkDdbMkBlGdt2wQA8-EriGywj7F7F5w/viewform?usp=pp_url&entry.${idDaPerguntaNoForms}=${encodeURIComponent(nomePersonalidade)}`;
 
     // Joga o link no botão de feedback da página
-    document.getElementById("btn-feedback").href = linkFormsDinamico; 
+    const botaoFeedback = document.getElementById("btn-feedback");
+    
+    botaoFeedback.href = linkFormsDinamico; 
+    
+    if (botaoFeedback) {
+        botaoFeedback.addEventListener("click", function() {
+            // Dispara o evento personalizado para o Vercel Analytics
+            if (typeof va === "function") {
+                va.track('clique_enquete', { local: 'Pagina de Exposição' });
+            }
+        });
+    }
 
 });
