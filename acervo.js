@@ -1,7 +1,7 @@
 // acervo.js
 const bancoDeDados = {
     "carolina-maria": {
-    destaque:true,
+    destaque:false,
     nome: "Carolina Maria de Jesus",
     indexTexto:"Escritora, compositora e poetisa brasileira. Veja mais sobre a vida e obra da primeira mulher negra e favelada best-seller nos Estados Unidos. ",
     fotoBanner: "Assets/CarolinaMaria/fundo.jpg",
@@ -289,6 +289,86 @@ const bancoDeDados = {
           <li>Enciclopédia Itaú Cultural. <em>Abdias Nascimento.</em> Disponível em: <a href="https://enciclopedia.itaucultural.org.br" target="_blank" rel="noopener">enciclopedia.itaucultural.org.br</a></li>
           <li>Universidade de São Paulo – Núcleo de Direitos Humanos, São Carlos.</li>
         </ul>`,
+  },
+  "manuela-souza": {
+    destaque: true,
+    nome: "Manuela da Silva Souza",
+    indexTexto: "Matemática soteropolitana que transforma a complexidade da Álgebra em pontes para a vida real, sendo uma das maiores vozes sobre diversidade nas Ciências Exatas do Brasil.",
+    fotoBanner: "Assets/ManuelaSouza/fundo.jpg",
+    fotoPerfil: "Assets/ManuelaSouza/ManuelaSouza.png",
+    artistaLink: "https://www.instagram.com/al.umbramento",
+    artistaArroba: "@al.umbramento",
+    origemHTML: `
+      <p class="fs-5">
+        Manuela da Silva Souza nasceu em Salvador, Bahia. Crescendo em uma cidade de forte presença e herança negra, ela logo percebeu a ausência de representatividade na base da pirâmide da sociedade e no universo acadêmico brasileiro, que é majoritariamente branco e masculino nas exatas.
+      </p>
+      <p class="mt-3">
+        Desbravando espaços, Manuela rompeu um ciclo histórico: foi a primeira pessoa de toda a sua família  a ingressar em uma universidade e a conquistar o título de doutora.
+      </p>
+      <p class="mt-3">
+        Sua jornada  começou na Universidade Federal da Bahia (UFBA), onde iniciou em Licenciatura, mas durante o percurso descobriu sua afinidade para  o bacharelado e o mestrado em Matemática. Em seguida, alcançou o doutorado pela Universidade Estadual de Campinas (UNICAMP), experiência enriquecida por um período de intercâmbio sanduíche na Università degli Studi di Palermo, na Itália. Para ampliar ainda mais sua pesquisa, realizou pós-doutorados na Universidade de São Paulo (USP) e retornou para mais um pós-doutorado na UNICAMP.
+      </p>
+    `,
+
+    feitosHTML: `
+      <h6>Desmistificando a Matemática</h6>
+      <p>
+        Atualmente, a Dra. Manuela é Professora Associada na UFBA, atuando na área de Álgebra. Sua pesquisa é focada na <strong>Teoria de Identidades Polinomiais</strong>, que busca identificar padrões intrínsecos e comportamentos estruturais em sistemas de álgebra abstrata.
+      </p>
+      <p class="mt-3">
+        Apesar de sua pesquisa ser extremamente avançada, Manuela possui o talento de traduzir a teoria para leigos. Em suas palestras para alunos e público geral, ela comprova que a Álgebra pode modelar a natureza. Ela ensina os conceitos matemáticos usando a biologia como ferramenta: utiliza matrizes algébricas abstratas para calcular probabilidades de cruzamento genético de animais (como prever características dominantes de pelagem) e sistemas lineares para antever o equilíbrio de ecossistemas nas relações "Presa-Predador" (modelando o crescimento de populações de corujas e ratos com o passar dos meses).
+      </p>
+      <p class="mt-3">
+        Graças a essa excelência didática e de pesquisa, ela assumiu cargos de liderança fundamentais, como a Coordenação do Programa de Pós-Graduação em Matemática da UFBA entre janeiro de 2019 e maio de 2021.
+      </p>
+    `,
+
+    impactoHTML: `
+      <h2 class="section-title">Ciência, Gênero e Diversidade</h2>
+      <p>
+        A Matemática é historicamente uma das áreas mais elitizadas do país. Como cientista negra, Manuela frequentemente encontra poucos pares raciais em congressos e lideranças, relatando a solidão de buscar referências ao longo da carreira acadêmica. Ao perceber o silenciamento das mulheres nesse campo, ela se transformou em ativista para mudar as estruturas institucionais.
+      </p>
+      <div class="pull-quote">
+        "A ciência precisa da diversidade. Quanto maior a quantidade de pontos de vista diferentes você tiver, mais chances tem de resolver um problema."
+      </div>
+      <p>
+        Sua atuação política e social é notória: Manuela faz parte do <strong>Grupo de Matemáticas Negras</strong> e já participou da Comissão de Gênero da SBM/SBMAC (Sociedade Brasileira de Matemática Aplicada e Computacional) e da Comissão de Relações Étnico-Raciais da SBM. 
+      </p>
+      <p>
+        Ela utiliza a sua trajetória para incentivar o debate sobre bolsas de permanência, cotas e acesso à informação, argumentando que incluir pessoas negras, mulheres e periféricos na matemática não é apenas justiça social, mas uma garantia de aprimoramento na inteligência coletiva e inovação para o país.
+      </p>
+    `,
+
+    curiosidadesHTML: `
+      <h2 class="section-title">Fatos Marcantes</h2>
+      <ul class="curiosidades-list">
+          <li>
+            <div class="num">01</div>
+            <p><strong>Pioneirismo Familiar:</strong> Ela é o primeiro membro de toda a sua árvore genealógica a sentar em uma cadeira de universidade e a concluir um doutorado acadêmico.</p>
+          </li>
+          <li>
+            <div class="num">02</div>
+            <p><strong>Fórmula na Natureza:</strong> Para engajar os alunos com estruturas algébricas difíceis, ela utiliza modelagem matemática de populações biológicas e ecossistemas (ecologia matemática) mostrando a Álgebra Linear operando "invisível" na vida selvagem.</p>
+          </li>
+          <li>
+            <div class="num">03</div>
+            <p><strong>Farol Científico:</strong> Sem referências negras durante sua formação, Manuela tornou-se, hoje, o espelho que ela não teve para centenas de meninas que desejam ingressar na ciência.</p>
+          </li>
+          <li>
+            <div class="num">04</div>
+            <p><strong>Impacto Nacional:</strong> Sua importância política abriu discussões inéditas nos altos escalões da Sociedade Brasileira de Matemática para enfrentar o viés racial nas Ciências Exatas.</p>
+          </li>
+      </ul>
+    `,
+
+    referenciasHTML: `
+      <h2 class="section-title">Fontes e Leituras</h2>
+      <ul class="ref-list">
+        <li>GÊNERO E NÚMERO. <em>[DOC.GN] Potência N</em>. Documentário YouTube, 2018. Disponível em: <a href="https://www.youtube.com/watch?v=untetrh5MyM" target="_blank" rel="noopener">youtube.com/watch?v=untetrh5MyM</a></li>
+        <li>MATFEST. <em>Palestra 1: Manuela da Silva Souza (UFBA) - Álgebra Linear Aplicada</em>. YouTube, 2021. Disponível em: <a href="https://www.youtube.com/watch?v=00E8gvAP9Vk" target="_blank" rel="noopener">youtube.com/watch?v=00E8gvAP9Vk</a></li>
+        <li>MATEMÁTICAS NEGRAS. <em>Vídeo Manifesto e Histórico</em>. Facebook. Disponível em: <a href="https://www.facebook.com/watch/?v=1958904557576620" target="_blank" rel="noopener">facebook.com/watch</a></li>
+        <li>SBM/UFBA. <em>Biografia Acadêmica: Manuela da Silva Souza</em>. Portal Oficial Institucional.</li>
+      </ul>
+    `
   }
-  
 };
