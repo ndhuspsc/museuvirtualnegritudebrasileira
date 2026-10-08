@@ -296,8 +296,8 @@ const bancoDeDados = {
     indexTexto: "Matemática soteropolitana que transforma a complexidade da Álgebra em pontes para a vida real, sendo uma das maiores vozes sobre diversidade nas Ciências Exatas do Brasil.",
     fotoBanner: "Assets/ManuelaSouza/fundo.jpg",
     fotoPerfil: "Assets/ManuelaSouza/ManuelaSouza.png",
-    artistaLink: "https://www.instagram.com/al.umbramento",
-    artistaArroba: "@al.umbramento",
+    artistaLink: "https://www.instagram.com/zeitouniarts",
+    artistaArroba: "@zeitouniarts",
     origemHTML: `
       <p class="fs-5">
         Manuela da Silva Souza nasceu em Salvador, Bahia. Crescendo em uma cidade de forte presença e herança negra, ela logo percebeu a ausência de representatividade na base da pirâmide da sociedade e no universo acadêmico brasileiro, que é majoritariamente branco e masculino nas exatas.
