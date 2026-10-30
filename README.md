@@ -45,13 +45,15 @@ src/
 3. Coloque as imagens em `public/Assets/NomePasta/` e use caminho absoluto
    (`/Assets/...`).
 
+Para destacar uma pessoa no banner da home, aponte a constante `DESTAQUE` em
+`src/data/acervo.tsx` para a chave dela (apenas uma por vez).
+
 ```tsx
 // src/data/personalidades/nome-curto.tsx
 import type { Personalidade } from "../../types";
 import { Paragrafo, Citacao } from "../../components/conteudo";
 
 export const nomeCurto: Personalidade = {
-  destaque: false,              // true coloca a pessoa no banner da home
   nome: "Nome Completo",
   indexTexto: "Resumo curto exibido no card e no banner.",
   fotoBanner: "/Assets/NomePasta/fundo.jpg",
