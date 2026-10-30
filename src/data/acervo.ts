@@ -1,11 +1,12 @@
-// acervo.js
-const bancoDeDados = {
+import type { Personalidade } from "../types";
+
+export const bancoDeDados: Record<string, Personalidade> = {
     "carolina-maria": {
     destaque:false,
     nome: "Carolina Maria de Jesus",
     indexTexto:"Escritora, compositora e poetisa brasileira. Veja mais sobre a vida e obra da primeira mulher negra e favelada best-seller nos Estados Unidos. ",
-    fotoBanner: "Assets/CarolinaMaria/fundo.jpg",
-    fotoPerfil: "Assets/CarolinaMaria/carolina_maria.png",
+    fotoBanner: "/Assets/CarolinaMaria/fundo.jpg",
+    fotoPerfil: "/Assets/CarolinaMaria/carolina_maria.png",
     artistaLink: "https://www.instagram.com/al.umbramento",
     artistaArroba: "@al.umbramento",
     origemHTML: ` 
@@ -38,7 +39,7 @@ const bancoDeDados = {
      Ao ler seus cadernos repletos de registros poéticos e cruéis sobre a miséria, o jornalista percebeu que a verdadeira história daquele lugar estava ali, escrita por quem a vivia.</p>
      <p>Isso culminou na publicação, em agosto de 1960, de seu primeiro e mais famoso livro: <strong>"Quarto de Despejo: Diário de uma Favelada"</strong>. O sucesso foi estrondoso: a obra vendeu cerca de 10 mil exemplares em apenas uma semana, denunciou a realidade social e política do Brasil de forma sem precedentes e foi traduzida para mais de 13 idiomas, sendo distribuída em mais de 40 países.</p>
      <figure>
-      <div class="section-photo"><img class="hero-foreground-img" src="Assets/CarolinaMaria/carolina_livro.jpg" alt="Carolina Maria de Jesus autografando seu livro"></div>
+      <div class="section-photo"><img class="hero-foreground-img" src="/Assets/CarolinaMaria/carolina_livro.jpg" alt="Carolina Maria de Jesus autografando seu livro"></div>
       <figcaption><i>Carolina Maria de Jesus, que se tornou um fenômeno editorial no Brasil e no mundo. Acervo IMS.</i></figcaption></figure>
      <p>
       Com os ganhos do livro, Carolina conseguiu deixar a favela e mudar-se para o bairro de Santana, experiência marcada por preconceitos da elite e novas perspectivas de vida, relatados em <strong> "Casa de Alvenaria" </strong> (1961). Uma artista múltipla, ela não se limitou aos diários: escreveu romances (como "O Escravo" — publicado em 2023, postumamente, pela <i>Companhia  das Letras</i>, como parte de um projeto de publicar toda obra de Carolina ), poemas, contos, peças de teatro e provérbios. Em 1961, também gravou o disco de vinil <strong>"Quarto de Despejo"</strong>, onde cantou sambas e marchas de sua própria autoria.
@@ -103,12 +104,12 @@ const bancoDeDados = {
     destaque:false,
     nome: "Luiz Gama",
     indexTexto:"O advogado autodidata que desafiou o império e libertou centenas de escravizados.",
-    fotoBanner: "Assets/LuizGama/fundo.png",
-    fotoPerfil: "Assets/LuizGama/luiz_gama.png",
+    fotoBanner: "/Assets/LuizGama/fundo.png",
+    fotoPerfil: "/Assets/LuizGama/luiz_gama.png",
     artistaLink: "https://www.instagram.com/al.umbramento",
     artistaArroba: "@al.umbramento",
     origemHTML: `<p>Luís Gonzaga Pinto da Gama nasceu livre no dia 21 de junho de 1830, na cidade de Salvador, província da Bahia. Ele era filho de Luíza Mahin, mulher negra, africana livre vinda da Costa da Mina, que se sustentava fazendo e vendendo quitandas, e de um fidalgo português cujo nome ele nunca revelou. Luísa Mahin envolveu-se em movimentos de resistência negra na Bahia, como a Revolta dos Malês e a Sabinada, e por isso teria sido obrigada a deixar a cidade, ficando o filho aos cuidados do pai. </p><p>O pai de Gama vivia de uma herança recebida em 1838, mas dois anos depois já se encontrava em situação de extrema pobreza, viciado em jogos de cartas.Em novembro de 1840, <strong>aos 10 anos de idade</strong>, Luiz foi levado pelo próprio pai a bordo de um navio e vendido como escravo, num ato que marcaria toda a sua trajetória de vida. </p><div class="pull-quote">"O escravo que mata o senhor, em qualquer circunstância, mata sempre em legítima defesa."</div><P>Foi levado para o Rio de Janeiro e depois revendido a um fazendeiro da região de Lorena chamado Antônio Pereira Cardoso, no interior de São Paulo, onde permaneceu cativo e analfabeto durante toda a infância e adolescência. Foi o estudante Anônio Rodrigues do Prado Junior que hospedado na mesma casa quem ensinou Luiz, já com cerca de 17 anos, a ler e escrever. </P><p>Em 1848,<i> "havendo obtido de forma ardilosa e secretamente provas inconcussas de sua liberade"</i>, segundo seu proprio relato, foge da casa de Cardoso para a capital paulista, onde viveria pelos quarenta e dois anos seguintes, tornando-se um de seus cidadãos mais ilustres. Alistou-se na Força Pública e, mais tarde, conseguiu trabalho como amanuense e praticante de Direito na Secretaria de Polícia da província, ambiente que lhe deu acesso direto às leis e aos processos judiciais. </p><p>Embora nunca tenha cursado a Faculdade de Direito do Largo de São Francisco de forma regular — não podia, por ser negro e sem diploma —, Gama frequentou as aulas como ouvinte e absorveu o conhecimento jurídico que usaria, dali em diante, para combater a escravidão dentro dos próprios tribunais do Império. </p>`,
-    feitosHTML: `<h6>Direito, Jornalismo e Literatura</h6><p>Como advogado — ainda que "provisionado", sem diploma formal — Gama dedicou-se a defender, gratuitamente, escravizados que buscavam sua liberdade nos tribunais. Ao longo de sua carreira, conseguiu a libertação de mais de <strong>500 pessoas</strong> por meio de ações judiciais e administrativas, um feito sem precedentes na história das Américas. Ele dominava todas as áreas do Direito e adaptava seus argumentos ao perfil de cada juiz: usava fundamentação eclesiástica diante de magistrados católicos, o vocabulário iluminista francês diante de maçons, e interpretação jurídica restrita diante dos mais técnicos.</p><p>Seu caso mais célebre ocorreu entre 1870 e 1872, na comarca de Santos: ao defender um grupo de pessoas escravizadas que haviam sido declaradas livres em testamento, Gama venceu na primeira e na segunda instâncias, conquistando a liberdade de <strong>217 cativos</strong> de uma só vez — a maior ação coletiva de libertação já registrada nas Américas.</p><figure><div class="section-photo"><img class="hero-foreground-img" src="Assets/LuizGama/luizgama.png" alt="Luiz Gama, por volta de 1880"></div><figcaption>Luiz Gama, em fotografia de cerca de 1880. Acervo Wikimedia Commons.</figcaption></figure><p>Paralelamente ao Direito, Gama foi um dos fundadores da imprensa humorística e satírica de São Paulo. Em 1864, junto ao caricaturista Ângelo Agostini, fundou o jornal ilustrado <strong>Diabo Coxo</strong>, recorrendo a charges para que mesmo os iletrados compreendessem os debates políticos e sociais da época. Colaborou ainda com os periódicos <strong>O Cabrião</strong> e <strong>O Polichinelo</strong>, e em 1869 fundou, com Rui Barbosa, o <strong>Correio Paulistano</strong>, primeiro jornal diário da capital paulista.</p><p>Como escritor, publicou em 1859 seu único livro, <strong>Primeiras Trovas Burlescas de Getulino</strong> — coletânea de versos satíricos sob o pseudônimo "Getulino" — no qual ironizava a aristocracia escravocrata e afirmava com orgulho sua negritude. É dele o poema "Quem Sou Eu?", também chamado de "Bodarrada", resposta irônica ao apelido racista de "bode" que tentavam lhe impor.</p><p>Gama foi também um defensor pioneiro da causa republicana, participando da fundação do Partido Republicano Paulista em 1873, embora dele tenha se afastado quase imediatamente ao perceber que o espaço era dominado por fazendeiros e senhores de escravos. Sua militância era simultânea: contra a Monarquia e contra o cativeiro, que para ele eram a mesma luta.</p>`,
+    feitosHTML: `<h6>Direito, Jornalismo e Literatura</h6><p>Como advogado — ainda que "provisionado", sem diploma formal — Gama dedicou-se a defender, gratuitamente, escravizados que buscavam sua liberdade nos tribunais. Ao longo de sua carreira, conseguiu a libertação de mais de <strong>500 pessoas</strong> por meio de ações judiciais e administrativas, um feito sem precedentes na história das Américas. Ele dominava todas as áreas do Direito e adaptava seus argumentos ao perfil de cada juiz: usava fundamentação eclesiástica diante de magistrados católicos, o vocabulário iluminista francês diante de maçons, e interpretação jurídica restrita diante dos mais técnicos.</p><p>Seu caso mais célebre ocorreu entre 1870 e 1872, na comarca de Santos: ao defender um grupo de pessoas escravizadas que haviam sido declaradas livres em testamento, Gama venceu na primeira e na segunda instâncias, conquistando a liberdade de <strong>217 cativos</strong> de uma só vez — a maior ação coletiva de libertação já registrada nas Américas.</p><figure><div class="section-photo"><img class="hero-foreground-img" src="/Assets/LuizGama/luizgama.png" alt="Luiz Gama, por volta de 1880"></div><figcaption>Luiz Gama, em fotografia de cerca de 1880. Acervo Wikimedia Commons.</figcaption></figure><p>Paralelamente ao Direito, Gama foi um dos fundadores da imprensa humorística e satírica de São Paulo. Em 1864, junto ao caricaturista Ângelo Agostini, fundou o jornal ilustrado <strong>Diabo Coxo</strong>, recorrendo a charges para que mesmo os iletrados compreendessem os debates políticos e sociais da época. Colaborou ainda com os periódicos <strong>O Cabrião</strong> e <strong>O Polichinelo</strong>, e em 1869 fundou, com Rui Barbosa, o <strong>Correio Paulistano</strong>, primeiro jornal diário da capital paulista.</p><p>Como escritor, publicou em 1859 seu único livro, <strong>Primeiras Trovas Burlescas de Getulino</strong> — coletânea de versos satíricos sob o pseudônimo "Getulino" — no qual ironizava a aristocracia escravocrata e afirmava com orgulho sua negritude. É dele o poema "Quem Sou Eu?", também chamado de "Bodarrada", resposta irônica ao apelido racista de "bode" que tentavam lhe impor.</p><p>Gama foi também um defensor pioneiro da causa republicana, participando da fundação do Partido Republicano Paulista em 1873, embora dele tenha se afastado quase imediatamente ao perceber que o espaço era dominado por fazendeiros e senhores de escravos. Sua militância era simultânea: contra a Monarquia e contra o cativeiro, que para ele eram a mesma luta.</p>`,
     impactoHTML:`      <h2 class="section-title">Patrono da Abolição</h2>
         <p>
           Luiz Gama faleceu em São Paulo, em 24 de agosto de 1882, vítima de diabetes, aos 52 anos — seis anos antes da assinatura da Lei Áurea, que ele tanto lutou para antecipar. Seu funeral reuniu uma multidão tão grande que o cortejo, segundo relatos da época, teve de ser conduzido a pé pelas ruas da cidade, carregado por amigos e admiradores que não permitiram que a carruagem funerária o levasse sozinho.
@@ -173,8 +174,8 @@ const bancoDeDados = {
     destaque:false,
     nome: "Abdias Nascimento",
     indexTexto:"O teatro, a política e a arte como ferramentas de resistência e emancipação.",
-    fotoBanner: "Assets/Abdias/os doadores da tecnologia.png",
-    fotoPerfil: "Assets/Abdias/abdias.png",
+    fotoBanner: "/Assets/Abdias/os doadores da tecnologia.png",
+    fotoPerfil: "/Assets/Abdias/abdias.png",
     artistaLink: "https://www.instagram.com/zeitouniarts",
     artistaArroba: "@zeitouniarts",
     origemHTML: `
@@ -294,8 +295,8 @@ const bancoDeDados = {
     destaque: false,
     nome: "Manuela da Silva Souza",
     indexTexto: "Matemática soteropolitana que transforma a complexidade da Álgebra em pontes para a vida real, sendo uma das maiores vozes sobre diversidade nas Ciências Exatas do Brasil.",
-    fotoBanner: "Assets/ManuelaSouza/fundo.jpg",
-    fotoPerfil: "Assets/ManuelaSouza/ManuelaSouza.png",
+    fotoBanner: "/Assets/ManuelaSouza/fundo.jpg",
+    fotoPerfil: "/Assets/ManuelaSouza/ManuelaSouza.png",
     artistaLink: "https://www.instagram.com/zeitouniarts",
     artistaArroba: "@zeitouniarts",
     origemHTML: `
@@ -375,8 +376,8 @@ const bancoDeDados = {
     destaque: true,
     nome: "Eliza Maria Ferreira Veras da Silva",
     indexTexto: "A primeira mulher negra doutora em Matemática do Brasil, que desbravou a álgebra avançada na França e abriu caminhos históricos nas ciências exatas.",
-    fotoBanner: "Assets/ElizaMaria/fundo.jpg",
-    fotoPerfil: "Assets/ElizaMaria/elizamaria.png",
+    fotoBanner: "/Assets/ElizaMaria/fundo.jpg",
+    fotoPerfil: "/Assets/ElizaMaria/elizamaria.png",
     artistaLink: "#",
     artistaArroba: "Acervo Museu Virtual",
     origemHTML: `<p>Eliza Maria Ferreira Veras da Silva nasceu no dia 4 de fevereiro de 1944, na cidade de Ituberá, no interior da Bahia. Filha de um casamento inter-racial entre Dahil Ferreira, dona de casa, e Edgard Moreira Rosa, funcionário da Receita, viu a sua infância mudar drasticamente aos três anos de idade, quando o seu pai desapareceu. A partir desse momento, a sua mãe passou a sustentar sozinha os cinco filhos através da confeção e venda de bordados.</p><p>Após passar por Gandu, a família estabeleceu-se em Jequié na casa da avó, quando Eliza tinha cerca de sete anos. Para ingressar na Escola Normal mais conceituada da cidade — um espaço particular frequentado pela elite local —, conseguiu uma bolsa de estudos sob a condição de ser aprovada no exame de admissão. Eliza passou em <strong>1º lugar com média 9,4</strong>, momento em que enfrentou de forma marcante o racismo ao ouvir mães de outras alunas comentarem na praça que o primeiro lugar tinha ficado com <i>"uma neguinha aí"</i>.</p><div class="pull-quote">"Você tem que dar o seu melhor naquilo que você pode fazer, que é a aquisição de conhecimento. Ninguém pode tirar isso de você, conhecimento adquirido nunca lhe é tirado."</div><p>Durante o curso pedagógico, como a bolsa passou a ser parcial, complementava a renda dando aulas particulares a colegas. Concluiu os três anos mantendo <strong>nota 10 em todas as disciplinas</strong> — um feito tão extraordinário que levou o próprio diretor da escola a conferir caderneta por caderneta por duvidar da sua nota, pedindo-lhe perdão na véspera da formatura. Esse mérito rendeu-lhe duas bolsas de estudo da empresa holandesa Phillips, dando-lhe o impulso financeiro para mudar-se para Salvador e prestar o vestibular.</p><p>Em Salvador, conciliando uma rotina exaustiva como professora primária e explicadora particular, prestou vestibular para Matemática na Universidade Federal da Bahia (UFBA) em 1964, sendo aprovada em <strong>2º lugar</strong>. Formou-se em 1967 nas duas habilitações (Licenciatura e Bacharelado) e, pouco depois, tornou-se docente do Instituto de Matemática da UFBA.</p>`,
