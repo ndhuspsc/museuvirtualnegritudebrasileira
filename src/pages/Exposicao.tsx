@@ -101,44 +101,29 @@ export default function Exposicao() {
         <section id="origem" className="content-section">
           <p className="section-label">01 — Origem</p>
           <h2 className="section-title">Nascimento e Formação</h2>
-          <div
-            id="conteudo-origem"
-            dangerouslySetInnerHTML={{ __html: dados.origemHTML }}
-          />
+          <div id="conteudo-origem">{dados.origem}</div>
         </section>
 
         {/* FEITOS */}
         <section id="feitos" className="content-section">
           <p className="section-label">02 — Feitos</p>
           <h2 className="section-title">Legados e Conquistas</h2>
-          <div
-            id="conteudo-feitos"
-            dangerouslySetInnerHTML={{ __html: dados.feitosHTML }}
-          />
+          <div id="conteudo-feitos">{dados.feitos}</div>
         </section>
 
         <section id="impacto" className="content-section">
           <p className="section-label">03 — Impacto nos Dias Atuais</p>
-          <div
-            id="conteudo-impacto"
-            dangerouslySetInnerHTML={{ __html: dados.impactoHTML }}
-          />
+          <div id="conteudo-impacto">{dados.impacto}</div>
         </section>
 
         <section id="curiosidades" className="content-section">
           <p className="section-label">04 — Curiosidades</p>
-          <div
-            id="conteudo-curiosidades"
-            dangerouslySetInnerHTML={{ __html: dados.curiosidadesHTML }}
-          />
+          <div id="conteudo-curiosidades">{dados.curiosidades}</div>
         </section>
 
         <section id="referencias" className="content-section">
           <p className="section-label">05 — Referências</p>
-          <div
-            id="conteudo-referencias"
-            dangerouslySetInnerHTML={{ __html: dados.referenciasHTML }}
-          />
+          <div id="conteudo-referencias">{dados.referencias}</div>
         </section>
 
         {/* FEEDBACK */}

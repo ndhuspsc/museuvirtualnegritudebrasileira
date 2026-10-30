@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export interface Personalidade {
   destaque: boolean;
   nome: string;
@@ -6,11 +8,11 @@ export interface Personalidade {
   fotoPerfil: string;
   artistaLink: string;
   artistaArroba: string;
-  origemHTML: string;
-  feitosHTML: string;
-  impactoHTML: string;
-  curiosidadesHTML: string;
-  referenciasHTML: string;
+  origem: ReactNode;
+  feitos: ReactNode;
+  impacto: ReactNode;
+  curiosidades: ReactNode;
+  referencias: ReactNode;
 }
 
 export interface Membro {
