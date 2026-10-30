@@ -12,7 +12,6 @@ import {
 } from "../../components/conteudo";
 
 export const luizGama: Personalidade = {
-  destaque: false,
   nome: "Luiz Gama",
   indexTexto:
     "O advogado autodidata que desafiou o império e libertou centenas de escravizados.",

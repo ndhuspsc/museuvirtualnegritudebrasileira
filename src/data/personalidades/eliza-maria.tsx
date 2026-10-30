@@ -11,7 +11,6 @@ import {
 } from "../../components/conteudo";
 
 export const elizaMaria: Personalidade = {
-  destaque: true,
   nome: "Eliza Maria Ferreira Veras da Silva",
   indexTexto:
     "A primeira mulher negra doutora em Matemática do Brasil, que desbravou a álgebra avançada na França e abriu caminhos históricos nas ciências exatas.",

@@ -12,7 +12,6 @@ import {
 } from "../../components/conteudo";
 
 export const carolinaMaria: Personalidade = {
-  destaque: false,
   nome: "Carolina Maria de Jesus",
   indexTexto:
     "Escritora, compositora e poetisa brasileira. Veja mais sobre a vida e obra da primeira mulher negra e favelada best-seller nos Estados Unidos. ",

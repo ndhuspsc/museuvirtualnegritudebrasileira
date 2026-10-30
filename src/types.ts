@@ -1,7 +1,6 @@
 import type { ReactNode } from "react";
 
 export interface Personalidade {
-  destaque: boolean;
   nome: string;
   indexTexto: string;
   fotoBanner: string;

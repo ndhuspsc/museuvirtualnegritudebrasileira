@@ -11,7 +11,6 @@ import {
 } from "../../components/conteudo";
 
 export const manuelaSouza: Personalidade = {
-  destaque: false,
   nome: "Manuela da Silva Souza",
   indexTexto:
     "Matemática soteropolitana que transforma a complexidade da Álgebra em pontes para a vida real, sendo uma das maiores vozes sobre diversidade nas Ciências Exatas do Brasil.",

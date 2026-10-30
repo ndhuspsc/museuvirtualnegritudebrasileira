@@ -1,12 +1,13 @@
 import Header from "../components/Header";
 import MuseumCard from "../components/MuseumCard";
 import FeaturedBanner from "../components/FeaturedBanner";
-import { bancoDeDados } from "../data/acervo";
+import { bancoDeDados, DESTAQUE } from "../data/acervo";
 
 export default function Home() {
-  const entradas = Object.entries(bancoDeDados);
-  const destaque = entradas.find(([, expo]) => expo.destaque);
-  const demais = entradas.filter(([, expo]) => !expo.destaque);
+  const destaque = bancoDeDados[DESTAQUE];
+  const demais = Object.entries(bancoDeDados).filter(
+    ([id]) => id !== DESTAQUE,
+  );
 
   return (
     <>
@@ -72,7 +73,7 @@ export default function Home() {
 
         <div id="secao-destaque">
           {destaque && (
-            <FeaturedBanner id={destaque[0]} expo={destaque[1]} />
+            <FeaturedBanner id={DESTAQUE} expo={destaque} />
           )}
         </div>
 

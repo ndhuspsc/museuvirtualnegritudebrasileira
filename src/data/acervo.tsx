@@ -13,3 +13,7 @@ export const bancoDeDados: Record<string, Personalidade> = {
   "manuela-souza": manuelaSouza,
   "eliza-maria": elizaMaria,
 };
+
+// Quem aparece no banner de destaque da home. Trocar o destaque = mudar esta
+// linha. Deve ser uma chave existente em bancoDeDados.
+export const DESTAQUE = "eliza-maria";

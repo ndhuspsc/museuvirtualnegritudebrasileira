@@ -12,7 +12,6 @@ import {
 } from "../../components/conteudo";
 
 export const abdiasNascimento: Personalidade = {
-  destaque: false,
   nome: "Abdias Nascimento",
   indexTexto:
     "O teatro, a política e a arte como ferramentas de resistência e emancipação.",
