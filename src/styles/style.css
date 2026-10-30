@@ -24,7 +24,9 @@
       background-color: #fff;
       text-decoration: none;
       color: inherit;
-      display: block;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
     .museum-card:hover {
       transform: translateY(-5px);
@@ -41,6 +43,7 @@
       padding: 30px;
       text-align: center;
       border-top: 4px solid var(--gold);
+      flex: 1 1 auto;
     }
     .museum-card h3 {
       font-family: 'Playfair Display', serif;
