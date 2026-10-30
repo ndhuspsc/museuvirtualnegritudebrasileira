@@ -25,21 +25,32 @@ src/
   main.tsx            monta o router + Vercel Analytics
   App.tsx             rotas + Footer + CookieBanner
   types.ts            interfaces Personalidade e Membro
-  data/acervo.ts      banco de dados das personalidades (tipado)
+  data/
+    acervo.tsx        agrega as personalidades (define a ordem no grid)
+    personalidades/   uma personalidade por arquivo .tsx
   components/         Header, Footer, CookieBanner, MuseumCard,
                       FeaturedBanner, TeamCard
+                      conteudo.tsx (blocos: Paragrafo, Citacao, Figura...)
   pages/              Home, Exposicao, Sobre
   styles/style.css    estilos do site
 ```
 
 ## Adicionar uma personalidade
 
-Edite `src/data/acervo.ts` e acrescente uma entrada ao objeto `bancoDeDados`.
-A chave vira o `id` usado na URL (`exposicao.html?id=sua-chave`). O TypeScript
-exige que todos os campos de `Personalidade` sejam preenchidos:
+1. Crie `src/data/personalidades/nome-curto.tsx` exportando um `Personalidade`.
+   O conteúdo das seções é JSX, montado com os blocos de `components/conteudo`.
+   O TypeScript exige que todos os campos sejam preenchidos.
+2. Importe e registre a pessoa em `src/data/acervo.tsx`. A chave vira o `id` da
+   URL (`exposicao.html?id=nome-curto`) e a ordem ali define a ordem no grid.
+3. Coloque as imagens em `public/Assets/NomePasta/` e use caminho absoluto
+   (`/Assets/...`).
 
-```ts
-"nome-curto": {
+```tsx
+// src/data/personalidades/nome-curto.tsx
+import type { Personalidade } from "../../types";
+import { Paragrafo, Citacao } from "../../components/conteudo";
+
+export const nomeCurto: Personalidade = {
   destaque: false,              // true coloca a pessoa no banner da home
   nome: "Nome Completo",
   indexTexto: "Resumo curto exibido no card e no banner.",
@@ -47,16 +58,22 @@ exige que todos os campos de `Personalidade` sejam preenchidos:
   fotoPerfil: "/Assets/NomePasta/perfil.png",
   artistaLink: "https://instagram.com/...",
   artistaArroba: "@artista",
-  origemHTML: `...`,            // conteúdo HTML das seções
-  feitosHTML: `...`,
-  impactoHTML: `...`,
-  curiosidadesHTML: `...`,
-  referenciasHTML: `...`,
-}
+  origem: (
+    <>
+      <Paragrafo>Texto com <strong>negrito</strong> e <em>itálico</em>.</Paragrafo>
+      <Citacao>Uma citação em destaque.</Citacao>
+    </>
+  ),
+  feitos: ( /* ... */ ),
+  impacto: ( /* ... */ ),
+  curiosidades: ( /* ... */ ),
+  referencias: ( /* ... */ ),
+};
 ```
 
-Coloque as imagens em `public/Assets/NomePasta/` e referencie-as com caminho
-absoluto (`/Assets/...`).
+Blocos disponíveis em `components/conteudo.tsx`: `Paragrafo` (aceita
+`className`), `Citacao`, `TituloSecao`, `Subtitulo`, `Figura`,
+`ListaCuriosidades`/`Curiosidade`, `ListaReferencias`/`Referencia`.
 
 ## Equipe
 
