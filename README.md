@@ -29,7 +29,7 @@ src/
     acervo.tsx        agrega as personalidades (define a ordem no grid)
     personalidades/   uma personalidade por arquivo .tsx
   components/         Header, Footer, CookieBanner, MuseumCard,
-                      FeaturedBanner, TeamCard
+                      FeaturedBanner, TeamCard, ResumoExposicao
                       conteudo.tsx (blocos: Paragrafo, Citacao, Figura...)
   pages/              Home, Exposicao, Sobre
   styles/style.css    estilos do site
@@ -60,6 +60,11 @@ export const nomeCurto: Personalidade = {
   fotoPerfil: "/Assets/NomePasta/perfil.png",
   artistaLink: "https://instagram.com/...",
   artistaArroba: "@artista",
+  resumo: [
+    "Primeira frase do resumo.",
+    <>Frase com <strong>destaque</strong> em negrito.</>,
+    // ...de 4 a 5 frases no total
+  ],
   origem: (
     <>
       <Paragrafo>Texto com <strong>negrito</strong> e <em>itálico</em>.</Paragrafo>
@@ -72,6 +77,11 @@ export const nomeCurto: Personalidade = {
   referencias: ( /* ... */ ),
 };
 ```
+
+O `resumo` é a caixa "Em poucas palavras" no topo da página da exposição
+(componente `ResumoExposicao`). Cada item do array vira um tópico: escreva de
+4 a 5 frases curtas, em texto simples ou JSX (`<strong>`, `<em>`). Os estilos
+ficam em `src/styles/style.css`, na seção "Resumo da exposição".
 
 Blocos disponíveis em `components/conteudo.tsx`: `Paragrafo` (aceita
 `className`), `Citacao`, `TituloSecao`, `Subtitulo`, `Figura`,

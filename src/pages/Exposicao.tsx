@@ -1,6 +1,7 @@
 import { useSearchParams, Navigate } from "react-router-dom";
 import { track } from "@vercel/analytics";
 import Header from "../components/Header";
+import ResumoExposicao from "../components/ResumoExposicao";
 import { bancoDeDados } from "../data/acervo";
 
 const ID_PERGUNTA_FORMS = "110415446";
@@ -97,6 +98,9 @@ export default function Exposicao() {
       </div>
 
       <main>
+        {/* RESUMO */}
+        <ResumoExposicao key={id} topicos={dados.resumo} />
+
         {/* ORIGEM */}
         <section id="origem" className="content-section">
           <p className="section-label">01 — Origem</p>

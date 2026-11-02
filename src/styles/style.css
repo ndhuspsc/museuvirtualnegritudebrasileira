@@ -92,6 +92,104 @@
       color: #fff;
     }
 
+    /* ── Resumo da exposição (topo da página) ───── */
+    /* Mesma largura das seções de conteúdo (.content-section) */
+    .resumo-wrapper {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: clamp(28px, 5vw, 44px) clamp(16px, 5vw, 24px) 0;
+    }
+
+    .resumo {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--gold);
+      border-radius: 4px 12px 12px 4px;
+      box-shadow: 0 10px 30px rgba(77, 33, 9, 0.08);
+      padding: clamp(20px, 4vw, 30px) clamp(18px, 4vw, 36px) clamp(10px, 2vw, 14px);
+    }
+
+    .resumo__cabecalho {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px 14px;
+      margin-bottom: 14px;
+    }
+
+    /* Etiqueta "Resumo da exposição" */
+    .resumo__selo {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--teal-dark);
+      color: var(--teal-light);
+      font-family: 'Oswald', sans-serif;
+      font-size: .7rem;
+      line-height: 1.6;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 50px;
+    }
+    .resumo__selo i { color: var(--gold); }
+
+    .resumo__titulo {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.25rem, 3vw, 1.6rem);
+      font-weight: 900;
+      line-height: 1.2;
+      color: var(--dark);
+      margin: 0;
+    }
+
+    /* list-style/padding/margin explícitos: o Bootstrap põe recuo em <ul> */
+    .resumo__lista {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .resumo__lista li {
+      position: relative;
+      padding: 12px 0 12px 28px;
+      border-top: 1px dashed var(--border);
+      font-size: clamp(1rem, 2vw, 1.05rem);
+      line-height: 1.6;
+      color: #3a3a3a;
+      /* entrada suave, um item após o outro (--i vem do React) */
+      opacity: 0;
+      animation: resumo-entrada .5s ease forwards;
+      animation-delay: calc(var(--i, 0) * 90ms + 100ms);
+    }
+
+    /* Marcador em losango dourado */
+    .resumo__lista li::before {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: calc(12px + .8em - 4.5px);
+      width: 9px;
+      height: 9px;
+      background: var(--gold);
+      transform: rotate(45deg);
+    }
+
+    .resumo__lista strong {
+      font-weight: 600;
+      color: var(--teal-dark);
+    }
+
+    @keyframes resumo-entrada {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: none; }
+    }
+
+    /* Quem prefere menos movimento vê tudo de uma vez, sem animação */
+    @media (prefers-reduced-motion: reduce) {
+      .resumo__lista li { animation: none; opacity: 1; }
+    }
+
     /* Tabs de Filtro (Visual) */
     .team-filter .nav-link {
       color: var(--teal);
