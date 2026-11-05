@@ -2,6 +2,7 @@ import { useSearchParams, Navigate } from "react-router-dom";
 import { track } from "@vercel/analytics";
 import Header from "../components/Header";
 import { bancoDeDados } from "../data/acervo";
+import { TtsComponent } from '../components/TtsComponent';
 
 const ID_PERGUNTA_FORMS = "110415446";
 
@@ -99,6 +100,7 @@ export default function Exposicao() {
       <main>
         {/* ORIGEM */}
         <section id="origem" className="content-section">
+          <TtsComponent targetElementId="origem" />
           <p className="section-label">01 — Origem</p>
           <h2 className="section-title">Nascimento e Formação</h2>
           <div id="conteudo-origem">{dados.origem}</div>
@@ -106,17 +108,20 @@ export default function Exposicao() {
 
         {/* FEITOS */}
         <section id="feitos" className="content-section">
+          <TtsComponent targetElementId="feitos" />
           <p className="section-label">02 — Feitos</p>
           <h2 className="section-title">Legados e Conquistas</h2>
           <div id="conteudo-feitos">{dados.feitos}</div>
         </section>
 
         <section id="impacto" className="content-section">
+          <TtsComponent targetElementId="impacto" />
           <p className="section-label">03 — Impacto nos Dias Atuais</p>
           <div id="conteudo-impacto">{dados.impacto}</div>
         </section>
 
         <section id="curiosidades" className="content-section">
+          <TtsComponent targetElementId="curiosidades" />
           <p className="section-label">04 — Curiosidades</p>
           <div id="conteudo-curiosidades">{dados.curiosidades}</div>
         </section>
