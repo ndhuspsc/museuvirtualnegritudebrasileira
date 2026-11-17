@@ -8,21 +8,9 @@ interface FloatingAudioGuideProps {
 
 export const TtsComponent: React.FC<FloatingAudioGuideProps> = ({ targetElementId }) => {
   const [isSpeaking, setIsSpeaking] = useState(false);
-  const [systemVoices, setSystemVoices] = useState<SpeechSynthesisVoice[]>([]);
 
-  // Carrega a lista de vozes do dispositivo
+  // Interrompe a leitura se o componente for destruído (por exemplo, ao mudar de página).
   useEffect(() => {
-    const updateVoices = () => {
-      if (typeof window !== 'undefined' && window.speechSynthesis) {
-        setSystemVoices(window.speechSynthesis.getVoices());
-      }
-    };
-    updateVoices();
-    if (typeof window !== 'undefined' && window.speechSynthesis) {
-      window.speechSynthesis.onvoiceschanged = updateVoices;
-    }
-
-    // Limpa o áudio se o componente for destruído (mudar de página)
     return () => {
       if (typeof window !== 'undefined' && window.speechSynthesis) {
         window.speechSynthesis.cancel();
@@ -55,7 +43,6 @@ export const TtsComponent: React.FC<FloatingAudioGuideProps> = ({ targetElementI
 
     const utterance = new SpeechSynthesisUtterance(textToRead);
 
-    {/* Língua e cadência */}
     utterance.lang = 'pt-BR';
     utterance.rate = 0.92;
 
@@ -85,7 +72,7 @@ export const TtsComponent: React.FC<FloatingAudioGuideProps> = ({ targetElementI
         transition: 'all 0.3s ease',
       }}
     >
-      {isSpeaking ? <i class="bi bi-stop-fill"></i> : <i class="bi bi-play-fill"></i>}
+      {isSpeaking ? <i className="bi bi-stop-fill"></i> : <i className="bi bi-play-fill"></i>}
     </a>
   );
 };
