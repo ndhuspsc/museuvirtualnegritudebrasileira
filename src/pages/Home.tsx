@@ -63,27 +63,31 @@ export default function Home() {
           </div>
         </div>
 
-        <hr
-          style={{
-            borderColor: "var(--purple)",
-            opacity: 0.5,
-            margin: "40px 0",
-          }}
-        />
+
 
         <div id="secao-destaque">
+          <hr
+              style={{
+                borderColor: "var(--purple)",
+                opacity: 0.5,
+                margin: "40px 0",
+              }}
+          />
+          
           {destaque && (
             <FeaturedBanner id={DESTAQUE} expo={destaque} />
           )}
+
+          <hr
+              style={{
+                borderColor: "var(--purple)",
+                opacity: 0.5,
+                margin: "40px 0",
+              }}
+          />
         </div>
 
-        <hr
-          style={{
-            borderColor: "var(--purple)",
-            opacity: 0.5,
-            margin: "40px 0",
-          }}
-        />
+
 
         {/* ACERVO GERAL */}
         <div className="text-center mb-5">

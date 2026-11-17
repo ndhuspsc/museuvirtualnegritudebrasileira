@@ -7,6 +7,12 @@ export interface Personalidade {
   fotoPerfil: string;
   artistaLink: string;
   artistaArroba: string;
+  /**
+   * Resumo exibido no topo da página da exposição (estilo "resumo da notícia").
+   * Cada item do array vira um tópico, então use de 4 a 5 frases curtas.
+   * Aceita texto simples ou JSX (ex.: <>Frase com <strong>destaque</strong>.</>).
+   */
+  resumo: ReactNode[];
   origem: ReactNode;
   feitos: ReactNode;
   impacto: ReactNode;

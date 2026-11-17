@@ -20,6 +20,31 @@ export const luizGama: Personalidade = {
   artistaLink: "https://www.instagram.com/al.umbramento",
   artistaArroba: "@al.umbramento",
 
+  resumo: [
+    <>
+      Nascido livre em Salvador, em <strong>1830</strong>, foi vendido como
+      escravo pelo próprio pai aos 10 anos de idade.
+    </>,
+    <>
+      Aprendeu a ler já adolescente, fugiu do cativeiro e se tornou, em São
+      Paulo, um advogado autodidata.
+    </>,
+    <>
+      Defendendo escravizados gratuitamente nos tribunais, conquistou a
+      liberdade de <strong>mais de 500 pessoas</strong>, entre elas 217 de uma
+      só vez, em Santos.
+    </>,
+    <>
+      Também foi jornalista e poeta: fundou o jornal <em>Diabo Coxo</em> e
+      publicou <em>Primeiras Trovas Burlescas de Getulino</em>.
+    </>,
+    <>
+      Em 2015, a OAB-SP lhe concedeu postumamente o título de advogado e, em
+      2018, foi declarado <strong>Patrono da Abolição da Escravidão</strong> no
+      Brasil.
+    </>,
+  ],
+
   origem: (
     <>
       <Paragrafo>

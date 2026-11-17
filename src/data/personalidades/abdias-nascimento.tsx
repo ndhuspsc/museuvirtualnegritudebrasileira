@@ -20,6 +20,31 @@ export const abdiasNascimento: Personalidade = {
   artistaLink: "https://www.instagram.com/zeitouniarts",
   artistaArroba: "@zeitouniarts",
 
+  resumo: [
+    <>
+      Nascido em Franca (SP), em <strong>1914</strong>, foi dramaturgo, artista
+      plástico, professor e político, e dedicou a vida ao combate ao racismo.
+    </>,
+    <>
+      Em 1944, fundou o <strong>Teatro Experimental do Negro</strong>, que
+      rompeu a barreira racial no Theatro Municipal do Rio e levou alfabetização
+      a empregadas domésticas e operários.
+    </>,
+    <>
+      Exilado durante a ditadura militar, descobriu nas artes plásticas a sua
+      maior voz, lecionou em universidades como Yale e escreveu{" "}
+      <em>O Quilombismo</em> (1980).
+    </>,
+    <>
+      Na Câmara dos Deputados e no Senado, foi pioneiro ao propor ações
+      afirmativas e a tipificação do racismo como crime de lesa-humanidade.
+    </>,
+    <>
+      Autor da proposta do Dia Nacional da Consciência Negra, foi indicado ao
+      Nobel da Paz em 2010 e declarado <strong>Herói Nacional</strong> em 2024.
+    </>,
+  ],
+
   origem: (
     <>
       <Paragrafo>
