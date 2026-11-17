@@ -20,6 +20,30 @@ export const carolinaMaria: Personalidade = {
   artistaLink: "https://www.instagram.com/al.umbramento",
   artistaArroba: "@al.umbramento",
 
+  resumo: [
+    <>
+      Nascida em <strong>1914</strong>, em Sacramento (MG), frequentou a escola
+      por apenas dois anos, mas fez da leitura uma paixão para a vida toda.
+    </>,
+    <>
+      Em São Paulo, na favela do Canindé, passou a registrar o cotidiano em
+      cadernos encontrados no lixo.
+    </>,
+    <>
+      Esses diários viraram <em>Quarto de Despejo</em> (1960), best-seller
+      traduzido para mais de <strong>13 idiomas</strong> e distribuído em cerca
+      de 40 países.
+    </>,
+    <>
+      Também escreveu romances, poemas, peças de teatro e canções, e chegou a
+      gravar um disco em 1961.
+    </>,
+    <>
+      Reconhecida hoje como voz essencial da literatura brasileira, recebeu da
+      UFRJ, em 2021, o título póstumo de <strong>Doutora Honoris Causa</strong>.
+    </>,
+  ],
+
   origem: (
     <>
       <Paragrafo>

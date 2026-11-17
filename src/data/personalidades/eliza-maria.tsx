@@ -19,6 +19,31 @@ export const elizaMaria: Personalidade = {
   artistaLink: "#",
   artistaArroba: "Acervo Museu Virtual",
 
+  resumo: [
+    <>
+      Nascida em Ituberá (BA), em <strong>1944</strong>, foi criada pela mãe,
+      que sustentou sozinha os cinco filhos vendendo bordados depois que o pai
+      desapareceu.
+    </>,
+    <>
+      Aprovada em 1º lugar numa escola da elite local, com bolsa de estudos,
+      concluiu o curso com nota 10 em todas as disciplinas.
+    </>,
+    <>
+      Formou-se em Matemática pela UFBA em 1967 e, com bolsa da UNESCO, seguiu
+      para a Universidade de Montpellier, na França.
+    </>,
+    <>
+      Em <strong>1977</strong>, tornou-se a primeira mulher negra doutora em
+      Matemática do Brasil, com pesquisa sobre álgebras não associativas.
+    </>,
+    <>
+      Professora da UFBA por décadas, dá nome a um programa de iniciação
+      científica, criado em 2022, que estimula estudantes negras e negros nas
+      exatas.
+    </>,
+  ],
+
   origem: (
     <>
       <Paragrafo>

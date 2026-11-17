@@ -19,6 +19,31 @@ export const manuelaSouza: Personalidade = {
   artistaLink: "https://www.instagram.com/zeitouniarts",
   artistaArroba: "@zeitouniarts",
 
+  resumo: [
+    <>
+      Matemática nascida em Salvador (BA), foi a{" "}
+      <strong>primeira pessoa da família</strong> a chegar à universidade e a
+      conquistar o título de doutora.
+    </>,
+    <>
+      Formou-se na UFBA, fez doutorado na UNICAMP, com período de intercâmbio na
+      Itália, e pós-doutorados na USP e na UNICAMP.
+    </>,
+    <>
+      Hoje é Professora Associada da UFBA e pesquisa Álgebra, com foco na Teoria
+      de Identidades Polinomiais.
+    </>,
+    <>
+      É conhecida por traduzir a teoria para o grande público com exemplos da
+      biologia, como o cruzamento genético de animais e o equilíbrio entre
+      presas e predadores.
+    </>,
+    <>
+      Integra o <strong>Grupo de Matemáticas Negras</strong> e defende mais
+      diversidade, cotas e acesso à informação nas Ciências Exatas.
+    </>,
+  ],
+
   origem: (
     <>
       <Paragrafo className="fs-5">
