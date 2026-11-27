@@ -16,8 +16,8 @@ export const emicida: Personalidade = {
   // TODO: ajustar os caminhos das imagens e o link do artista
   fotoBanner: "/Assets/Emicida/fundo.jpg",
   fotoPerfil: "/Assets/Emicida/Emicida.png",
-  artistaLink: "",
-  artistaArroba: "",
+  artistaLink: "https://www.instagram.com/al.umbramento",
+  artistaArroba: "@al.umbramento",
 
   resumo: [
     <>
