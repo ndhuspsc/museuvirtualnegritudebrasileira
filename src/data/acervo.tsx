@@ -6,6 +6,7 @@ import { manuelaSouza } from "./personalidades/manuela-souza";
 import { elizaMaria } from "./personalidades/eliza-maria";
 import { julianeFonseca } from "./personalidades/juliane-fonseca";
 import { lucianaAparecida } from "./personalidades/luciana-aparecida";
+import { emicida } from "./personalidades/emicida";
 
 // Ordem preservada: a ordem de inserção define a ordem no grid da home.
 export const bancoDeDados: Record<string, Personalidade> = {
@@ -16,8 +17,9 @@ export const bancoDeDados: Record<string, Personalidade> = {
   "eliza-maria": elizaMaria,
   "juliane-fonseca": julianeFonseca,
   "luciana-aparecida": lucianaAparecida,
+  "emicida": emicida,
 };
 
 // Quem aparece no banner de destaque da home. Trocar o destaque = mudar esta
 // linha. Deve ser uma chave existente em bancoDeDados.
-export const DESTAQUE = "luciana-aparecida";
+export const DESTAQUE = "emicida";
