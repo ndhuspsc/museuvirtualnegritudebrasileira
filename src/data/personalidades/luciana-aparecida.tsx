@@ -16,8 +16,8 @@ export const lucianaAparecida: Personalidade = {
     "Professora Titular da Universidade Federal de Jataí, pesquisadora em Geometria e Cosmologia Matemática e referência nacional na luta antirracista e pela equidade de gênero nas ciências exatas.",
   fotoBanner: "/Assets/LucianaAparecida/fundo.jpg",
   fotoPerfil: "/Assets/LucianaAparecida/lucianaAparecida.png",
-  artistaLink: "#",
-  artistaArroba: "Acervo Museu Virtual",
+  artistaLink: "https://www.instagram.com/al.umbramento",
+  artistaArroba: "@al.umbramento",
 
   resumo: [
     <>

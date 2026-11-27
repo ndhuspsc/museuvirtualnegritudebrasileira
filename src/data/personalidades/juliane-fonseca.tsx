@@ -16,8 +16,8 @@ export const julianeFonseca: Personalidade = {
     "Matemática baiana que une equações diferenciais, ciência de dados e saúde pública para antecipar surtos epidêmicos e combater desigualdades sociais no Brasil.",
   fotoBanner: "/Assets/JulianeFonseca/fundo.jpg",
   fotoPerfil: "/Assets/JulianeFonseca/julianefonseca.webp",
-  artistaLink: "#",
-  artistaArroba: "Acervo Museu Virtual",
+  artistaLink: "https://www.instagram.com/al.umbramento",
+  artistaArroba: "@al.umbramento",
 
   resumo: [
     <>

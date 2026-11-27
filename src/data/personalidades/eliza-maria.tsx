@@ -16,8 +16,8 @@ export const elizaMaria: Personalidade = {
     "A primeira mulher negra doutora em Matemática do Brasil, que desbravou a álgebra avançada na França e abriu caminhos históricos nas ciências exatas.",
   fotoBanner: "/Assets/ElizaMaria/fundo.jpg",
   fotoPerfil: "/Assets/ElizaMaria/elizamaria.png",
-  artistaLink: "#",
-  artistaArroba: "Acervo Museu Virtual",
+  artistaLink: "https://www.instagram.com/al.umbramento",
+  artistaArroba: "@al.umbramento",
 
   resumo: [
     <>
